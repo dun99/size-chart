@@ -1,5 +1,5 @@
 import SizeItem from "./SizeItem";
-import "./SizeChart.css"
+import "./SizeChart.css";
 function SizeListWoman() {
   let sizes = [
     {
@@ -137,19 +137,12 @@ function SizeListWoman() {
       italy: 47,
       other: 17,
     },
-    
   ];
 
   let sizeList = sizes.map((size, index) => {
-    return(
-        <SizeItem key={index} size = {size}/>
-    )
+    return <SizeItem key={index} size={size} />;
   });
-  return (
-    <tbody className="size-list">
-      {sizeList}
-    </tbody>
-  );
+  return <tbody className="size-list">{sizeList}</tbody>;
 }
 
 export default SizeListWoman;
